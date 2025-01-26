@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sachit Kuhar</title>
+
+    <!-- Basic styling (similar to the reference website) -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        font-family: "Helvetica", "Arial", sans-serif;
+        color: #333;
+        line-height: 1.4em;
+      }
+      a {
+        color: #0366d6;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .name {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin: 0 0 10px;
+      }
+      /* Increased max-width from 800px to 1000px for a wider layout */
+      table {
+        border-spacing: 0;
+        border-collapse: separate;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px; /* changed from 800px to 1000px */
+      }
+      .section-title {
+        font-weight: bold;
+        font-size: 1.4em;
+        margin: 20px 0 10px;
+        text-transform: uppercase;
+        color: #333;
+      }
+      .one {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+      }
+      .two {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0;
+      }
+      .one:hover .two {
+        opacity: 1;
+      }
+      .colored-box {
+        padding: 8px;
+        font-weight: bold;
+        background-color: #fafafa;
+        border: 1px solid #eee;
+        margin: 16px 0 5px;
+      }
+      .publication-entry {
+        margin: 10px 0;
+      }
+      .publication-title {
+        font-weight: bold;
+      }
+      .footer-note {
+        text-align: right;
+        font-size: 0.9em;
+        color: #666;
+        margin-top: 30px;
+      }
+      /* Collapsible <details> for BibTeX */
+      details {
+        margin-top: 8px;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+      details summary {
+        font-weight: bold;
+        outline: none;
+      }
+      details pre {
+        background: #f5f5f5;
+        padding: 10px;
+        font-size: 0.9em;
+        overflow-x: auto;
+      }
+      /* Red highlight for "Spotlight Talk" / "Oral Presentation" */
+      .highlight-red {
+        color: red;
+        font-weight: normal;
+      }
+    </style>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204916456-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'UA-204916456-1');
+    </script>
+  </head>
+  <body>
+
+    <!-- Outer container table -->
+    <table>
+      <tr>
+        <td style="padding:20px;vertical-align:top;">
+
+          <!-- Header/Intro Section -->
+          <table style="border:0;">
+            <tr>
+              <td style="vertical-align:middle;width:65%;padding:10px;">
+                <p class="name" style="text-align:center;">Sachit Kuhar</p>
+                <p style="text-align:center;">
+                  Hi there! I'm an AI researcher at AWS AI Labs, working on Large Language Models. Previously, I attended Georgia Tech where I was advised by <a href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a>, and
+                  before that I spent four wonderful years at IIT Guwahati as an undergrad.
+                </p>
+                <p style="text-align:center;">
+                  <a href="mailto:kuhar.sachit@gmail.com">Email</a> |
+                  <!-- <a href="Sachit_Kuhar_Resume.pdf">Resume</a> | -->
+                  <a href="https://scholar.google.com/citations?user=X8slYZEAAAAJ&hl=en">Google Scholar</a> |
+                  <a href="https://linkedin.com/in/sachitkuhar">LinkedIn</a>
+                </p>
+              </td>
+              <td style="vertical-align:middle;width:35%;padding:10px;">
+                <!-- Replace with your own picture if desired -->
+                <img src="images/Sachit_Picture.png" alt="Sachit Photo" style="width:100%;max-width:250px;border-radius:50%;">
+              </td>
+            </tr>
+          </table>
+
+          <!-- Research Section (combining Under Submission & Peer-Reviewed) -->
+          <div class="section-title">Research</div>
+
+          <table style="border:0;margin-top:10px;">
+
+            <!-- 1) LibEvolutionEval -->
+            <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
+              <td style="vertical-align:top;padding:10px;width:25%;">
+                <div class="one">
+                  <img src="images/libevolutioneval_placeholder.png"
+                       alt="LibEvolutionEval placeholder"
+                       style="width:100%;max-width:300px;">
+                </div>
+              </td>
+              <td style="vertical-align:middle;padding:10px;width:75%;">
+                <div class="publication-entry">
+                  <span class="publication-title">
+                    LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation
+                  </span>
+                  <a href="https://arxiv.org/abs/2412.04478">[PDF]</a>
+                  <a href="https://lib-evolution-eval.github.io/">[Website]</a>
+                  <br>
+                  <u>Sachit Kuhar</u>, Wasi Uddin Ahmad, Zijian Wang, Nihal Jain, Haifeng Qian,<br>
+                  Baishakhi Ray, Murali Krishna Ramanathan, Xiaofei Ma, Anoop Deoras<br>
+                  <b>NAACL</b> (Main Conference) 2025
+                  <p style="margin-top:8px;">
+                    A benchmark analyzing code generation when libraries evolve across versions, highlighting challenges for LLM-based code completions.
+                  </p>
+                </div>
+                <details>
+                  <summary>BibTeX</summary>
+                  <pre>
+@article{kuhar2024libevolutioneval,
+  title={LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation},
+  author={Kuhar, Sachit and Ahmad, Wasi Uddin and Wang, Zijian and Jain, Nihal and Qian, Haifeng and Ray, Baishakhi and Ramanathan, Murali Krishna and Ma, Xiaofei and Deoras, Anoop},
+  journal={arXiv preprint arXiv:2412.04478},
+  year={2024}
+}
+                  </pre>
+                </details>
+              </td>
+            </tr>
+
+            <!-- 2) PLUM -->
+            <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
+              <td style="vertical-align:top;padding:10px;width:25%;">
+                <div class="one">
+                  <img src="images/plum_placeholder.png"
+                       alt="PLUM placeholder"
+                       style="width:100%;max-width:300px;">
+                </div>
+              </td>
+              <td style="vertical-align:middle;padding:10px;width:75%;">
+                <div class="publication-entry">
+                  <span class="publication-title">PLUM: Improving Efficiency By Leveraging Repetition-Sparsity Trade-Off</span>
+                  <a href="https://openreview.net/forum?id=IEKtMMSblm">[PDF]</a>
+                  <a href="https://github.com/sachitkuhar/PLUM">[Website]</a>
+                  <br>
+                  <u>Sachit Kuhar</u>, Yash Jain, Alexey Tumanov<br>
+                  Transactions on Machine Learning Research (<b>TMLR</b>) 2024<br>
+                  <span class="highlight-red">Spotlight Talk</span> at <b>MLSys</b> On-Device Intelligence 2023
+                  <p style="margin-top:8px;">
+                    Proposes a method to exploit weight repetition and structural sparsity in neural networks to achieve better efficiency.
+                  </p>
+                </div>
+                <details>
+                  <summary>BibTeX</summary>
+                  <pre>
+@article{kuhar2024plum,
+  title={{PLUM}: Improving Inference Efficiency By Leveraging Repetition-Sparsity Trade-Off},
+  author={Kuhar, Sachit and Jain, Yash and Tumanov, Alexey},
+  journal={Transactions on Machine Learning Research},
+  year={2024},
+  url={https://openreview.net/forum?id=IEKtMMSblm}
+}
+                  </pre>
+                </details>
+              </td>
+            </tr>
+
+            <!-- 3) Learning to Discern -->
+            <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
+              <td style="vertical-align:top;padding:10px;width:25%;">
+                <div class="one">
+                  <img src="images/discern_placeholder.png"
+                       alt="Discern placeholder"
+                       style="width:100%;max-width:300px;">
+                </div>
+              </td>
+              <td style="vertical-align:middle;padding:10px;width:75%;">
+                <div class="publication-entry">
+                  <span class="publication-title">Learning to Discern: Imitating Heterogeneous Human Demonstrations</span> 
+                  <a href="https://openreview.net/pdf?id=kOm3jWX8YN">[PDF]</a><br>
+                  <u>Sachit Kuhar</u>, Shuo Cheng, Shivang Chopra, Matthew Bronars, Danfei Xu<br>
+                  Conference on Robot Learning (<b>CoRL</b>) 2023
+                  <p style="margin-top:8px;">
+                    Presents a method to handle mixed-quality offline demonstrations for imitation learning, improving policy performance.
+                  </p>
+                </div>
+                <details>
+                  <summary>BibTeX</summary>
+                  <pre>
+@inproceedings{kuhar2023learning,
+  title={Learning to Discern: Imitating Heterogeneous Human Demonstrations with Preference and Representation Learning},
+  author={Kuhar, Sachit and Cheng, Shuo and Chopra, Shivang and Bronars, Matthew and Xu, Danfei},
+  booktitle={7th Annual Conference on Robot Learning (CoRL)},
+  year={2023},
+  url={https://openreview.net/forum?id=kOm3jWX8YN}
+}
+                  </pre>
+                </details>
+              </td>
+            </tr>
+
+            <!-- 4) Offline Visual Representation Learning for Embodied Navigation -->
+            <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
+              <td style="vertical-align:top;padding:10px;width:25%;">
+                <div class="one">
+                  <img src="images/offlinevrl_placeholder.png"
+                       alt="Offline VRL placeholder"
+                       style="width:100%;max-width:300px;">
+                </div>
+              </td>
+              <td style="vertical-align:middle;padding:10px;width:75%;">
+                <div class="publication-entry">
+                  <span class="publication-title">Offline Visual Representation Learning for Embodied Navigation</span>
+                  <a href="https://arxiv.org/abs/2204.13226">[PDF]</a><br>
+                  Karmesh, Ram, Arjun, Vincent, <u>Sachit Kuhar</u>, Dhruv Batra, Alexei Baevski, Oleksandr Maksymets<br>
+                  <b>ICLR</b> Reincarnating Reinforcement Learning 2023
+                  <p style="margin-top:8px;">
+                    Examines self-supervised learning approaches for visual encoders in embodied navigation tasks using offline datasets.
+                  </p>
+                </div>
+                <details>
+                  <summary>BibTeX</summary>
+                  <pre>
+@inproceedings{yadav2023offline,
+  title={Offline Visual Representation Learning for Embodied Navigation},
+  author={Karmesh Yadav and Ram Ramrakhya and Arjun Majumdar and Vincent-Pierre Berges and Sachit Kuhar and Dhruv Batra and Alexei Baevski and Oleksandr Maksymets},
+  booktitle={Workshop on Reincarnating Reinforcement Learning at ICLR 2023},
+  year={2023},
+  url={https://openreview.net/forum?id=Spfbts_vNY}
+}
+                  </pre>
+                </details>
+              </td>
+            </tr>
+
+            <!-- 5) SumMerge -->
+            <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
+              <td style="vertical-align:top;padding:10px;width:25%;">
+                <div class="one">
+                  <img src="images/summerge_placeholder.png"
+                       alt="SumMerge placeholder"
+                       style="width:100%;max-width:300px;">
+                </div>
+              </td>
+              <td style="vertical-align:middle;padding:10px;width:75%;">
+                <div class="publication-entry">
+                  <span class="publication-title">SumMerge: Algorithm and Implementation for Weight Repetition-Aware DNN Inference</span>
+                  <a href="https://cwfletcher.github.io/content/research/2021.ics.summerge.paper.pdf">[PDF]</a><br>
+                  Rohan Prabhakar*, <u>Sachit Kuhar*</u>, Rohit Agrawal, Christopher Hughes, Christopher Fletcher<br>
+                  <span class="highlight-red">Oral Presentation</span> at International Conference on Supercomputing (<b>ICS</b>) 2021
+                  <p style="margin-top:8px;">
+                    Introduces an algorithm to accelerate DNN inference by exploiting weight repetition patterns, showing 2x improvement on Intel CPUs.
+                  </p>
+                </div>
+                <details>
+                  <summary>BibTeX</summary>
+                  <pre>
+@inproceedings{prabhakar2021summerge,
+  title={Summerge: An efficient algorithm and implementation for weight repetition-aware dnn inference},
+  author={Prabhakar, Rohan Baskar and Kuhar, Sachit and Agrawal, Rohit and Hughes, Christopher J and Fletcher, Christopher W},
+  booktitle={Proceedings of the ACM International Conference on Supercomputing},
+  pages={279--290},
+  year={2021}
+}
+                  </pre>
+                </details>
+              </td>
+            </tr>
+
+            <!-- 6) mRNA -->
+            <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
+              <td style="vertical-align:top;padding:10px;width:25%;">
+                <div class="one">
+                  <img src="images/mrna_placeholder.png"
+                       alt="mRNA placeholder"
+                       style="width:100%;max-width:300px;">
+                </div>
+              </td>
+              <td style="vertical-align:middle;padding:10px;width:75%;">
+                <div class="publication-entry">
+                  <span class="publication-title">mRNA: Enabling Efficient Mapping Space Exploration for a Reconfiguration Neural Accelerator</span>
+                  <a href="https://ieeexplore.ieee.org/document/8695674">[PDF]</a><br>
+                  Zhongyuan Zhao, Hyoukjun Kwon, <u>Sachit Kuhar</u>, Weiguang Sheng, Z Mao, Tushar Krishna<br>
+                  <span class="highlight-red">Oral Presentation</span> at International Symposium on Performance Analysis of Systems and Software (<b>ISPASS</b>) 2019
+                  <p style="margin-top:8px;">
+                    Proposes a design-space exploration methodology for mapping DNNs efficiently on a reconfigurable neural accelerator.
+                  </p>
+                </div>
+                <details>
+                  <summary>BibTeX</summary>
+                  <pre>
+@inproceedings{zhao2019mrna,
+  title={mrna: Enabling efficient mapping space exploration for a reconfiguration neural accelerator},
+  author={Zhao, Zhongyuan and Kwon, Hyoukjun and Kuhar, Sachit and Sheng, Weiguang and Mao, Zhigang and Krishna, Tushar},
+  booktitle={2019 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)},
+  pages={282--292},
+  year={2019},
+  organization={IEEE}
+}
+                  </pre>
+                </details>
+              </td>
+            </tr>
+
+            <!-- 7) Deep Learning based Semi-Blind Tracking -->
+            <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
+              <td style="vertical-align:top;padding:10px;width:25%;">
+                <div class="one">
+                  <img src="images/dl_tracking_placeholder.png"
+                       alt="DL Tracking placeholder"
+                       style="width:100%;max-width:300px;">
+                </div>
+              </td>
+              <td style="vertical-align:middle;padding:10px;width:75%;">
+                <div class="publication-entry">
+                  <span class="publication-title">Deep Learning based Semi-Blind Tracking for Aging Wireless Communication Channels</span>
+                  <a href="https://link.springer.com/article/10.1007/s11277-021-08354-x">[PDF]</a><br>
+                  <u>Sachit Kuhar*</u>, Achal Dave*, Ribhu Chopra<br>
+                  Springer Wireless Personal Communications (<b>WPC</b>), 2021
+                  <p style="margin-top:8px;">
+                    Develops a novel neural approach to track changes in wireless channels, improving communication reliability over time.
+                  </p>
+                </div>
+                <details>
+                  <summary>BibTeX</summary>
+                  <pre>
+@article{dave2021deep,
+  title={Deep learning based semi-blind tracking for aging wireless communication channels},
+  author={Dave, Achal and Kuhar, Sachit and Chopra, Ribhu},
+  journal={Wireless Personal Communications},
+  volume={119},
+  number={3},
+  pages={2695--2706},
+  year={2021},
+  publisher={Springer}
+}
+                  </pre>
+                </details>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Footer -->
+          <div class="footer-note">
+            <p>
+              © 2025 &nbsp;|&nbsp; 
+              <a href="https://jonbarron.info/" target="_blank" rel="noopener noreferrer">Template source</a>
+              <br>
+            </p>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>
