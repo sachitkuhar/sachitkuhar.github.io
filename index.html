@@ -98,6 +98,15 @@
         color: red;
         font-weight: normal;
       }
+      .publication-img {
+        display: block;          /* So margins work properly */
+        margin: 0 auto;          /* Centers the image horizontally */
+        max-width: 180px;        /* Constrain the width */
+        max-height: 180px;       /* Constrain the height */
+        height: auto;            /* Keep aspect ratio */
+        width: auto;             /* Keep aspect ratio */
+        object-fit: contain;     /* or 'cover' if you prefer cropping */
+      }
     </style>
 
     <!-- Google Analytics -->
@@ -150,7 +159,7 @@
                 <div class="one">
                   <img src="images/libevolutioneval_placeholder.png"
                        alt="LibEvolutionEval placeholder"
-                       style="width:100%;max-width:300px;">
+                       class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -188,7 +197,7 @@
                 <div class="one">
                   <img src="images/plum_placeholder.png"
                        alt="PLUM placeholder"
-                       style="width:100%;max-width:300px;">
+                       class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -225,7 +234,7 @@
                 <div class="one">
                   <img src="images/discern_placeholder.png"
                        alt="Discern placeholder"
-                       style="width:100%;max-width:300px;">
+                       class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -259,7 +268,7 @@
                 <div class="one">
                   <img src="images/offlinevrl_placeholder.png"
                        alt="Offline VRL placeholder"
-                       style="width:100%;max-width:300px;">
+                       class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -293,7 +302,7 @@
                 <div class="one">
                   <img src="images/summerge_placeholder.png"
                        alt="SumMerge placeholder"
-                       style="width:100%;max-width:300px;">
+                       class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -327,7 +336,7 @@
                 <div class="one">
                   <img src="images/mrna_placeholder.png"
                        alt="mRNA placeholder"
-                       style="width:100%;max-width:300px;">
+                       class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -362,7 +371,7 @@
                 <div class="one">
                   <img src="images/dl_tracking_placeholder.png"
                        alt="DL Tracking placeholder"
-                       style="width:100%;max-width:300px;">
+                       class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
