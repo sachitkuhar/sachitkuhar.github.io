@@ -26,13 +26,12 @@
         font-weight: bold;
         margin: 0 0 10px;
       }
-      /* Increased max-width from 800px to 1000px for a wider layout */
       table {
         border-spacing: 0;
         border-collapse: separate;
         margin: 0 auto;
         width: 100%;
-        max-width: 1000px; /* changed from 800px to 1000px */
+        max-width: 1000px;
       }
       .section-title {
         font-weight: bold;
@@ -77,7 +76,6 @@
         color: #666;
         margin-top: 30px;
       }
-      /* Collapsible <details> for BibTeX */
       details {
         margin-top: 8px;
         margin-bottom: 15px;
@@ -93,19 +91,18 @@
         font-size: 0.9em;
         overflow-x: auto;
       }
-      /* Red highlight for "Spotlight Talk" / "Oral Presentation" */
       .highlight-red {
         color: red;
         font-weight: normal;
       }
       .publication-img {
-        display: block;          /* So margins work properly */
-        margin: 0 auto;          /* Centers the image horizontally */
-        max-width: 180px;        /* Constrain the width */
-        max-height: 180px;       /* Constrain the height */
-        height: auto;            /* Keep aspect ratio */
-        width: auto;             /* Keep aspect ratio */
-        object-fit: contain;     /* or 'cover' if you prefer cropping */
+        display: block;
+        margin: 0 auto;
+        max-width: 180px;
+        max-height: 180px;
+        height: auto;
+        width: auto;
+        object-fit: contain;
       }
     </style>
 
@@ -118,8 +115,8 @@
       gtag('config', 'UA-204916456-1');
     </script>
   </head>
-  <body>
 
+  <body>
     <!-- Outer container table -->
     <table>
       <tr>
@@ -130,25 +127,38 @@
             <tr>
               <td style="vertical-align:middle;width:65%;padding:10px;">
                 <p class="name" style="text-align:center;">Sachit Kuhar</p>
+
                 <p style="text-align:center;">
-                  Hi there! I'm an AI researcher at AWS AI Labs, working on Large Language Models. Previously, I attended Georgia Tech where I was advised by <a href="https://faculty.cc.gatech.edu/~danfei/">Danfei Xu</a>, and
-                  before that I spent four wonderful years at IIT Guwahati as an undergrad.
+                  Hi there! I'm an AI researcher at AWS AI Labs, where I work on large language models for code and agentic software development. At AWS, I have been a core-team researcher for 
+                  <a href="https://docs.aws.amazon.com/codewhisperer/latest/userguide/whisper-legacy.html">CodeWhisperer</a>, Amazon’s first CodeLLM trained from scratch; the lead researcher for the 
+                  <a href="https://aws.amazon.com/about-aws/whats-new/2024/12/amazon-q-developer-automatic-unit-test-generation/">Amazon Q Developer /test agent</a>, which generates unit tests automatically; and a founding researcher for 
+                  <a href="https://kiro.dev/">Kiro</a>, an agentic AI-powered IDE.
                 </p>
+
+                <p style="text-align:center;">
+                  I’ve been fortunate to be advised by brilliant mentors, past and present, including 
+                  <a href="https://www.cs.columbia.edu/~rayb/">Prof. Baishakhi Ray</a>, 
+                  <a href="https://faculty.cc.gatech.edu/~danfei/">Prof. Danfei Xu</a>, 
+                  <a href="https://people.eecs.berkeley.edu/~cwfletcher/">Prof. Christopher Fletcher</a>, and 
+                  <a href="https://tusharkrishna.ece.gatech.edu/">Prof. Tushar Krishna</a>. 
+                  I’m grateful for their advice and support over the years, which have helped me develop perspective across the AI stack. Before that, I received my bachelor’s degree from the 
+                  <a href="https://www.iitg.ac.in/">Indian Institute of Technology (IIT) Guwahati</a>.
+                </p>
+
                 <p style="text-align:center;">
                   <a href="mailto:kuhar.sachit@gmail.com">Email</a> |
-                  <!-- <a href="Sachit_Kuhar_Resume.pdf">Resume</a> | -->
                   <a href="https://scholar.google.com/citations?user=X8slYZEAAAAJ&hl=en">Google Scholar</a> |
                   <a href="https://linkedin.com/in/sachitkuhar">LinkedIn</a>
                 </p>
               </td>
+
               <td style="vertical-align:middle;width:35%;padding:10px;">
-                <!-- Replace with your own picture if desired -->
                 <img src="images/Sachit_Picture.png" alt="Sachit Photo" style="width:100%;max-width:250px;border-radius:50%;">
               </td>
             </tr>
           </table>
 
-          <!-- Research Section (combining Under Submission & Peer-Reviewed) -->
+          <!-- Research Section -->
           <div class="section-title">Research</div>
 
           <table style="border:0;margin-top:10px;">
@@ -157,9 +167,7 @@
             <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
               <td style="vertical-align:top;padding:10px;width:25%;">
                 <div class="one">
-                  <img src="images/specagent.png"
-                       alt="SpecAgent placeholder"
-                       class="publication-img">
+                  <img src="images/specagent.png" alt="SpecAgent placeholder" class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -178,25 +186,23 @@
                 <details>
                   <summary>BibTeX</summary>
                   <pre>
-            @inproceedings{
-            anonymous2026specagent,
-            title={SpecAgent: A Speculative Retrieval and Forecasting Agent for Code Completion},
-            author={George Ma and Anurag Koul and Qi Chen and Yawen Wu and Sachit Kuhar and Yu Yu and Aritra Sengupta and Varun Kumar and Murali Krishna Ramanathan},
-            booktitle={The 64th Annual Meeting of the Association for Computational Linguistics},
-            year={2026},
-            url={https://openreview.net/forum?id=sSA2VqcyCd}
-            }
+@inproceedings{anonymous2026specagent,
+  title={SpecAgent: A Speculative Retrieval and Forecasting Agent for Code Completion},
+  author={George Ma and Anurag Koul and Qi Chen and Yawen Wu and Sachit Kuhar and Yu Yu and Aritra Sengupta and Varun Kumar and Murali Krishna Ramanathan},
+  booktitle={The 64th Annual Meeting of the Association for Computational Linguistics},
+  year={2026},
+  url={https://openreview.net/forum?id=sSA2VqcyCd}
+}
                   </pre>
                 </details>
               </td>
             </tr>
+
             <!-- 1) LibEvolutionEval -->
             <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
               <td style="vertical-align:top;padding:10px;width:25%;">
                 <div class="one">
-                  <img src="images/libevolutioneval_placeholder.png"
-                       alt="LibEvolutionEval placeholder"
-                       class="publication-img">
+                  <img src="images/libevolutioneval_placeholder.png" alt="LibEvolutionEval placeholder" class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -227,13 +233,12 @@
                 </details>
               </td>
             </tr>
-            <!-- 8) UTFix -->
+
+            <!-- 2) UTFix -->
             <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
               <td style="vertical-align:top;padding:10px;width:25%;">
                 <div class="one">
-                  <img src="images/utfix_placeholder.png"
-                       alt="UTFix placeholder"
-                       class="publication-img">
+                  <img src="images/utfix_placeholder.png" alt="UTFix placeholder" class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -250,25 +255,23 @@
                 <details>
                   <summary>BibTeX</summary>
                   <pre>
-            @inproceedings{rahman2025utfix,
-              title={UTFix: Change Aware Unit Test Repairing using LLM},
-              author={Rahman, Shanto and Kuhar, Sachit and Cirisci, Berk and Garg, Pranav and Wang, Shiqi and Ma, Xiaofei and Deoras, Anoop and Ray, Baishakhi},
-              booktitle={Proceedings of the OOPSLA},
-              year={2025},
-              address={Singapore}
-            }
+@inproceedings{rahman2025utfix,
+  title={UTFix: Change Aware Unit Test Repairing using LLM},
+  author={Rahman, Shanto and Kuhar, Sachit and Cirisci, Berk and Garg, Pranav and Wang, Shiqi and Ma, Xiaofei and Deoras and Ray, Baishakhi},
+  booktitle={Proceedings of the OOPSLA},
+  year={2025},
+  address={Singapore}
+}
                   </pre>
                 </details>
               </td>
             </tr>
 
-            <!-- 2) PLUM -->
+            <!-- 3) PLUM -->
             <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
               <td style="vertical-align:top;padding:10px;width:25%;">
                 <div class="one">
-                  <img src="images/plum_placeholder.png"
-                       alt="PLUM placeholder"
-                       class="publication-img">
+                  <img src="images/plum_placeholder.png" alt="PLUM placeholder" class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -299,18 +302,16 @@
               </td>
             </tr>
 
-            <!-- 3) Learning to Discern -->
+            <!-- 4) Learning to Discern -->
             <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
               <td style="vertical-align:top;padding:10px;width:25%;">
                 <div class="one">
-                  <img src="images/discern_placeholder.png"
-                       alt="Discern placeholder"
-                       class="publication-img">
+                  <img src="images/discern_placeholder.png" alt="Discern placeholder" class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
                 <div class="publication-entry">
-                  <span class="publication-title">Learning to Discern: Imitating Heterogeneous Human Demonstrations</span> 
+                  <span class="publication-title">Learning to Discern: Imitating Heterogeneous Human Demonstrations</span>
                   <a href="https://openreview.net/pdf?id=kOm3jWX8YN">[PDF]</a><br>
                   <u>Sachit Kuhar</u>, Shuo Cheng, Shivang Chopra, Matthew Bronars, Danfei Xu<br>
                   Conference on Robot Learning (<b>CoRL</b>) 2023
@@ -333,13 +334,11 @@
               </td>
             </tr>
 
-            <!-- 4) Offline Visual Representation Learning for Embodied Navigation -->
+            <!-- 5) Offline Visual Representation Learning for Embodied Navigation -->
             <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
               <td style="vertical-align:top;padding:10px;width:25%;">
                 <div class="one">
-                  <img src="images/offlinevrl_placeholder.png"
-                       alt="Offline VRL placeholder"
-                       class="publication-img">
+                  <img src="images/offlinevrl_placeholder.png" alt="Offline VRL placeholder" class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -367,13 +366,11 @@
               </td>
             </tr>
 
-            <!-- 5) SumMerge -->
+            <!-- 6) SumMerge -->
             <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
               <td style="vertical-align:top;padding:10px;width:25%;">
                 <div class="one">
-                  <img src="images/summerge_placeholder.png"
-                       alt="SumMerge placeholder"
-                       class="publication-img">
+                  <img src="images/summerge_placeholder.png" alt="SumMerge placeholder" class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -401,13 +398,11 @@
               </td>
             </tr>
 
-            <!-- 6) mRNA -->
+            <!-- 7) mRNA -->
             <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
               <td style="vertical-align:top;padding:10px;width:25%;">
                 <div class="one">
-                  <img src="images/mrna_placeholder.png"
-                       alt="mRNA placeholder"
-                       class="publication-img">
+                  <img src="images/mrna_placeholder.png" alt="mRNA placeholder" class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -436,13 +431,11 @@
               </td>
             </tr>
 
-            <!-- 7) Deep Learning based Semi-Blind Tracking -->
+            <!-- 8) Deep Learning based Semi-Blind Tracking -->
             <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
               <td style="vertical-align:top;padding:10px;width:25%;">
                 <div class="one">
-                  <img src="images/dl_tracking_placeholder.png"
-                       alt="DL Tracking placeholder"
-                       class="publication-img">
+                  <img src="images/dl_tracking_placeholder.png" alt="DL Tracking placeholder" class="publication-img">
                 </div>
               </td>
               <td style="vertical-align:middle;padding:10px;width:75%;">
@@ -477,7 +470,7 @@
           <!-- Footer -->
           <div class="footer-note">
             <p>
-              © 2025 &nbsp;|&nbsp; 
+              © 2025 &nbsp;|&nbsp;
               <a href="https://jonbarron.info/" target="_blank" rel="noopener noreferrer">Template source</a>
               <br>
             </p>
@@ -486,6 +479,5 @@
         </td>
       </tr>
     </table>
-
   </body>
 </html>
