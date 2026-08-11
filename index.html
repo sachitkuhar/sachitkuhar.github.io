@@ -163,42 +163,42 @@
 
           <table style="border:0;margin-top:10px;">
 
-            <!-- 0) CORVUS -->
-            <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
-              <td style="vertical-align:top;padding:10px;width:25%;">
-                <div class="one">
-                  <img src="images/corvus.png" alt="CORVUS placeholder" class="publication-img">
-                </div>
-              </td>
-              <td style="vertical-align:middle;padding:10px;width:75%;">
-                <div class="publication-entry">
-                  <span class="publication-title">
-                    CORVUS: Context Optimization and Reduction Via Underlying Synchronization for LLM Coding Agents
-                  </span>
-                  <a href="https://arxiv.org/abs/2607.22711">[PDF]</a>
-                  <br>
-                  Mingwei Zheng, David O'Brien, Siwei Cui, Pardis Pashakhanloo, Rajdeep Mukherjee,<br>
-                  Myeongsoo Kim, <u>Sachit Kuhar</u><!-- TODO: remaining authors --><br>
-                  <span class="highlight-red">New</span> <!-- TODO: venue, e.g. arXiv Preprint 2026 / Under Review -->
-                  <p style="margin-top:8px;">
-                    <!-- TODO: verify -->
-                    Reduces the context that LLM coding agents carry across a trajectory by synchronizing on underlying state rather than accumulating raw history.
-                  </p>
-                </div>
-                <details>
-                  <summary>BibTeX</summary>
-                  <pre>
-@article{zheng2026corvus,
-  title={{CORVUS}: Context Optimization and Reduction Via Underlying Synchronization for LLM Coding Agents},
-  author={Zheng, Mingwei and O'Brien, David and Cui, Siwei and Pashakhanloo, Pardis and Mukherjee, Rajdeep and Kim, Myeongsoo and Kuhar, Sachit},
-  journal={arXiv preprint arXiv:2607.22711},
-  year={2026},
-  url={https://arxiv.org/abs/2607.22711}
-}
-                  </pre>
-                </details>
-              </td>
-            </tr>            
+          <!-- 0) CORVUS -->
+          <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
+            <td style="vertical-align:top;padding:10px;width:25%;">
+              <div class="one">
+                <img src="images/corvus.png" alt="CORVUS: append-only trajectories accumulate duplicate and stale file snapshots, while CORVUS keeps one synced copy per file" class="publication-img">
+              </div>
+            </td>
+            <td style="vertical-align:middle;padding:10px;width:75%;">
+              <div class="publication-entry">
+                <span class="publication-title">
+                  CORVUS: Context Optimization and Reduction Via Underlying Synchronization for LLM Coding Agents
+                </span>
+                <span class="highlight-red">New</span>
+                <a href="https://arxiv.org/abs/2607.22711">[PDF]</a>
+                <br>
+                Mingwei Zheng, David O'Brien, Siwei Cui, Pardis Pashakhanloo, Rajdeep Mukherjee,<br>
+                Myeongsoo Kim, <u>Sachit Kuhar</u><br>
+                Currently under submission at <b>NeurIPS</b> 2026
+                <p style="margin-top:8px;">
+                  Replaces inline file reads with a synced file registry, refreshing current file contents before each reasoning cycle so the prompt holds at most one up-to-date copy of each relevant file instead of accumulating stale snapshots.
+                </p>
+              </div>
+              <details>
+                <summary>BibTeX</summary>
+                <pre>
+          @article{zheng2026corvus,
+            title={{CORVUS}: Context Optimization and Reduction Via Underlying Synchronization for LLM Coding Agents},
+            author={Zheng, Mingwei and O'Brien, David and Cui, Siwei and Pashakhanloo, Pardis and Mukherjee, Rajdeep and Kim, Myeongsoo and Kuhar, Sachit},
+            journal={arXiv preprint arXiv:2607.22711},
+            year={2026},
+            url={https://arxiv.org/abs/2607.22711}
+          }
+                </pre>
+              </details>
+            </td>
+          </tr>            
             <!-- 0) SpecAgent -->
             <tr onmouseover="this.style.background='#ffffd0';" onmouseout="this.style.background='transparent';">
               <td style="vertical-align:top;padding:10px;width:25%;">
